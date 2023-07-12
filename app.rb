@@ -16,6 +16,7 @@ get('/paper') do
   array = ["rock" , "paper", "scissors"]
   @randomPlay = array.sample
 
+  
   erb(:paper)
 end
 
