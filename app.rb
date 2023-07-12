@@ -1,8 +1,21 @@
 require 'sinatra'
+require "sinatra/reloader"
 
 get('/') do
-  "
-  <h1>Welcome to your Sinatra App!</h1>
-  <p>Define some routes in app.rb</p>
-  "
+  erb(:homepage)
+end
+
+get('/rock') do
+  array = ["rock" , "paper", "scissors"]
+  @randomPlay = array.sample
+
+  erb(:rock)
+end
+
+get('/paper') do
+  "<h1>Play Paper</h1>"
+end
+
+get('/scissors') do
+  "<h1>Play Scissors</h1>"
 end

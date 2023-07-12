@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+
+  <body>
+  <h2>We played rock!</h2>
+  <h2>They played <%= @randomPlay%>!</h2>
+
+  <% if @randomPlay == "rock" %>
+  <h2> We tied! </h2>
+  <% elsif @randomPlay == "scissors" %>
+  <h2> We won! </h2>
+  <% elsif @randomPlay == "paper"%>
+  <h2>They won!</h2>
+  <% end %>
+  </body>
+  
+  </html>
