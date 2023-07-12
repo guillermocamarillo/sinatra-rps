@@ -13,9 +13,15 @@ get('/rock') do
 end
 
 get('/paper') do
-  "<h1>Play Paper</h1>"
+  array = ["rock" , "paper", "scissors"]
+  @randomPlay = array.sample
+
+  erb(:paper)
 end
 
 get('/scissors') do
-  "<h1>Play Scissors</h1>"
+  array = ["rock" , "paper", "scissors"]
+  @randomPlay = array.sample
+
+  erb(:scissors)
 end

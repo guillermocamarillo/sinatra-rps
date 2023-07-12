@@ -4,15 +4,15 @@
   </head>
 
   <body>
-  <h2>We played rock!</h2>
+  <h2>We played paper!</h2>
   <h2>They played <%= @randomPlay%>!</h2>
 
   <% if @randomPlay == "rock" %>
-  <h2> We tied! </h2>
-  <% elsif @randomPlay == "scissors" %>
   <h2> We won! </h2>
+  <% elsif @randomPlay == "scissors" %>
+  <h2> We lost! </h2>
   <% elsif @randomPlay == "paper"%>
-  <h2>We lost!</h2>
+  <h2>We tied!</h2>
   <% end %>
   </body>
   
